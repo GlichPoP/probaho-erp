@@ -8,7 +8,7 @@
 [![Release](https://img.shields.io/badge/Release-v1.0.0-emerald?style=for-the-badge&logo=windows)](https://github.com/GlichPoP/probaho-erp/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows_x64-blue?style=for-the-badge&logo=electron)](https://github.com/GlichPoP/probaho-erp/releases)
 [![Architecture](https://img.shields.io/badge/Architecture-Offline--First_SQLite-indigo?style=for-the-badge&logo=sqlite)](https://github.com/GlichPoP/probaho-erp)
-[![License](https://img.shields.io/badge/License-Freeware-purple?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Open--Source-purple?style=for-the-badge)](LICENSE)
 
 <p align="center">
   <b>A lightweight, offline-first enterprise supply chain management suite designed for distributors, retailers, and logistics managers.</b>
@@ -108,9 +108,9 @@ npm run electron:build
 
 ---
 
-## 📄 License & Terms of Use
+## 📄 License & Attribution
 
-This software is distributed as **Freeware** under the [End User License Agreement](LICENSE).
-- **Free to Use**: You are free to download, install, and operate Probaho ERP for personal, commercial, showroom, wholesale, and retail enterprise operations without payment of licensing royalties or subscription fees.
-- **No Modifications / No Derivatives**: All intellectual property and proprietary rights belong solely to **Irfanur Rahman**. You may **not** alter, modify, decompile, disassemble, rebrand, or create derivative works based upon this software or its source code. Original, untouched distribution packages may be shared as published.
-- **Community Shout-Outs (Voluntary)**: If you find this software helpful in running your business operations, giving a shout-out or credit to **Irfanur Rahman** ([LinkedIn](https://www.linkedin.com/in/irfanur-rahman123/) • [GitHub](https://github.com/GlichPoP)) is warmly welcomed and appreciated, but is completely voluntary with zero mandatory force.
+This project is licensed under the [Open License & Terms of Use](LICENSE).
+- **Open to Use**: Anyone is free to download, install, run, and operate Probaho ERP for personal, commercial, retail, or enterprise supply chain workflows without payment of any royalties or licensing fees.
+- **Open to Modify**: Anyone is free to customize, adapt, extend, and build upon the tool or its source code to fit their operational needs.
+- **Proper Credits Appreciated**: If you use, adapt, or build upon this tool, giving proper credit or a shout-out to the original author, **[Irfanur Rahman](https://www.linkedin.com/in/irfanur-rahman123/)** ([LinkedIn](https://www.linkedin.com/in/irfanur-rahman123/) • [GitHub](https://github.com/GlichPoP)), is warmly appreciated and welcomed!

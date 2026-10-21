@@ -1,67 +1,41 @@
-PROBAHO ERP - END USER LICENSE AGREEMENT & TERMS OF USE
+PROBAHO ERP - OPEN LICENSE & TERMS OF USE
 Copyright (c) 2026 Irfanur Rahman. All Rights Reserved.
 Author / Creator: Irfanur Rahman
 Contact: irfanur6@gmail.com | https://www.linkedin.com/in/irfanur-rahman123/
 GitHub: https://github.com/GlichPoP
 
 ================================================================================
-1. GRANT OF LICENSE (FREEWARE / FREE TO USE)
+1. OPEN TO USE & FREE OPERATION
 ================================================================================
-The author and sole copyright owner, Irfanur Rahman ("Licensor"), hereby grants you 
-("User" or "Licensee") a free, non-exclusive, worldwide license to download, install, 
-run, and operate this Software for personal, commercial, retail, and supply chain 
-business management operations without payment of any royalties or licensing fees.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, run, operate, and distribute the Software for personal, commercial,
+retail, and enterprise operations without payment of royalties or licensing fees.
 
 ================================================================================
-2. PROHIBITION OF MODIFICATION & DERIVATIVE WORKS (NO DERIVATIVES)
+2. OPEN TO MODIFY & EXTEND
 ================================================================================
-All intellectual property, proprietary source code structure, trademarks, and copyright 
-in this Software belong solely to Irfanur Rahman. 
-
-To preserve the integrity, security, and reliability of the software:
-(a) NO MODIFICATIONS: You may NOT modify, alter, tamper with, adapt, translate, 
-    decompile, disassemble, reverse engineer, or create derivative works based 
-    upon this Software, its binaries, or its underlying source code.
-(b) NO REBRANDING OR RESALE: You may NOT rebrand, rename, sub-license, rent, lease, 
-    sell, or commercially distribute this Software or any of its components for monetary 
-    gain or commercial consideration.
-(c) UNMODIFIED DISTRIBUTION ONLY: If you share or distribute the installer or portable 
-    executable, you must distribute the original, untouched, and unmodified binary 
-    package as published by the original author.
+Anyone is free to modify, customize, adapt, extend, and build upon this Software 
+or its source code to meet their operational needs, subject to the conditions below.
 
 ================================================================================
-3. ATTRIBUTION & COMMUNITY SHOUT-OUTS (VOLUNTARY)
+3. ATTRIBUTION & PROPER CREDITS (WARMLY APPRECIATED)
 ================================================================================
-Using and running this application is completely free without forced obligations. 
-If you find this tool helpful in managing your enterprise, warehouse, or retail operations:
-(a) Giving a shout-out, reference, or credit to the creator (Irfanur Rahman) on LinkedIn, 
-    GitHub, or other professional platforms is warmly appreciated and welcomed.
-(b) Giving a shout-out is entirely voluntary and is at your own discretion—there is no 
-    mandatory requirement or force to do so.
-(c) Existing in-app copyright headers, author metadata, and About screens must remain intact.
+If you use, adapt, or modify this tool:
+(a) The above copyright notice and this permission notice shall be retained in 
+    all copies or substantial portions of the Software.
+(b) Giving proper credit, a shout-out, or a reference to the original author, 
+    Irfanur Rahman (LinkedIn: https://www.linkedin.com/in/irfanur-rahman123/ | GitHub: https://github.com/GlichPoP), 
+    is warmly welcomed and appreciated.
 
 ================================================================================
-4. ABSOLUTE "AS-IS" DISCLAIMER OF ALL WARRANTIES
+4. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
 ================================================================================
-THIS SOFTWARE IS PROVIDED ON AN "AS IS", "WITH ALL FAULTS", AND "AS AVAILABLE" BASIS, 
-WITHOUT WARRANTY OF ANY KIND WHATSOEVER. TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE 
-LAW, THE AUTHOR (IRFANUR RAHMAN) EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED, 
-OR STATUTORY, INCLUDING BUT NOT LIMITED TO:
-- WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT;
-- WARRANTIES ARISING OUT OF COURSE OF DEALING, USAGE, OR TRADE PRACTICE;
-- WARRANTIES THAT THE SOFTWARE WILL BE UNINTERRUPTED, SECURE, ACCURATE, OR ERROR-FREE.
-
-================================================================================
-5. COMPLETE LIMITATION OF LIABILITY
-================================================================================
-UNDER NO CIRCUMSTANCES SHALL THE CREATOR (IRFANUR RAHMAN) BE HELD LIABLE FOR ANY 
-CLAIM, DEMAND, LOSS OF DATA, LOSS OF BUSINESS PROFITS, REVENUE, CONTRACTS, COMMERCIAL 
-OPPORTUNITIES, SYSTEM DOWNTIME, OR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL 
-DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THIS SOFTWARE.
-
-================================================================================
-6. USER RESPONSIBILITY & DATA INTEGRITY
-================================================================================
-All ERP data is stored locally on the user's device hardware using an embedded local 
-relational engine. The creator maintains zero cloud access to user databases. Users 
-assume sole responsibility for maintaining regular local database backups.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
