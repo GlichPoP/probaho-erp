@@ -1,12 +1,14 @@
 <div align="center">
 
+<img src="build/icon.png" width="120" height="120" alt="Probaho ERP Logo" style="border-radius: 28px; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);" />
+
 # Probaho ERP
 ### Enterprise Supply Chain, Procurement & Multi-Warehouse Operations Suite
 
 [![Release](https://img.shields.io/badge/Release-v1.0.0-emerald?style=for-the-badge&logo=windows)](https://github.com/GlichPoP/probaho-erp/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows_x64-blue?style=for-the-badge&logo=electron)](https://github.com/GlichPoP/probaho-erp/releases)
 [![Architecture](https://img.shields.io/badge/Architecture-Offline--First_SQLite-indigo?style=for-the-badge&logo=sqlite)](https://github.com/GlichPoP/probaho-erp)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Freeware-purple?style=for-the-badge)](LICENSE)
 
 <p align="center">
   <b>A lightweight, offline-first enterprise supply chain management suite designed for distributors, retailers, and logistics managers.</b>
@@ -106,6 +108,9 @@ npm run electron:build
 
 ---
 
-## 📄 License
+## 📄 License & Terms of Use
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This software is distributed as **Freeware** under the [End User License Agreement](LICENSE).
+- **Free to Use**: You are free to download, install, and operate Probaho ERP for personal, commercial, showroom, wholesale, and retail enterprise operations without payment of licensing royalties or subscription fees.
+- **No Modifications / No Derivatives**: All intellectual property and proprietary rights belong solely to **Irfanur Rahman**. You may **not** alter, modify, decompile, disassemble, rebrand, or create derivative works based upon this software or its source code. Original, untouched distribution packages may be shared as published.
+- **Community Shout-Outs (Voluntary)**: If you find this software helpful in running your business operations, giving a shout-out or credit to **Irfanur Rahman** ([LinkedIn](https://www.linkedin.com/in/irfanur-rahman123/) • [GitHub](https://github.com/GlichPoP)) is warmly welcomed and appreciated, but is completely voluntary with zero mandatory force.
