@@ -1,0 +1,597 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   PROBAHO ERP DESIGN SYSTEM TOKENS
+   Offline-first enterprise tokens with verified WCAG 2.1 AA contrast
+   ========================================================================== */
+
+:root, [data-theme='light'] {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F1F5F9;
+  --bg-tertiary: #E2E8F0;
+  
+  --border-color: #E2E8F0;
+  --border-highlight: #CBD5E1;
+  --border-strong: #94A3B8;
+
+  --text-main: #0F172A;
+  --text-muted: #334155;
+  --text-dim: #475569;
+  
+  --accent-primary: #4F46E5;
+  --accent-hover: #4338CA;
+  --accent-glow: rgba(79, 70, 229, 0.14);
+  --accent-text: #FFFFFF;
+
+  --emerald: #047857;
+  --emerald-bg: #ECFDF5;
+  --emerald-border: #A7F3D0;
+
+  --ruby: #B91C1C;
+  --ruby-bg: #FEF2F2;
+  --ruby-border: #FECACA;
+
+  --amber: #B45309;
+  --amber-bg: #FFFBEB;
+  --amber-border: #FDE68A;
+
+  --cyan: #0369A1;
+  --cyan-bg: #F0F9FF;
+  --cyan-border: #BAE6FD;
+
+  --titlebar-bg: #FFFFFF;
+  --titlebar-border: #E2E8F0;
+  --titlebar-text: #334155;
+  --titlebar-btn-hover: #F1F5F9;
+  --titlebar-close-hover: #DC2626;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme='dark'] {
+  --bg-primary: #0B0F19;
+  --bg-secondary: #111827;
+  --bg-card: #182234;
+  --bg-hover: #1F2E45;
+  --bg-tertiary: #263852;
+
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-highlight: rgba(255, 255, 255, 0.22);
+  --border-strong: rgba(255, 255, 255, 0.35);
+
+  --text-main: #F8FAFC;
+  --text-muted: #CBD5E1;
+  --text-dim: #94A3B8;
+
+  --accent-primary: #4F46E5;
+  --accent-hover: #4338CA;
+  --accent-glow: rgba(79, 70, 229, 0.25);
+  --accent-text: #FFFFFF;
+
+  --emerald: #34D399;
+  --emerald-bg: rgba(16, 185, 129, 0.16);
+  --emerald-border: rgba(16, 185, 129, 0.32);
+
+  --ruby: #F87171;
+  --ruby-bg: rgba(239, 68, 68, 0.16);
+  --ruby-border: rgba(239, 68, 68, 0.32);
+
+  --amber: #FBBF24;
+  --amber-bg: rgba(245, 158, 11, 0.16);
+  --amber-border: rgba(245, 158, 11, 0.32);
+
+  --cyan: #38BDF8;
+  --cyan-bg: rgba(56, 189, 248, 0.16);
+  --cyan-border: rgba(56, 189, 248, 0.32);
+
+  --titlebar-bg: #0B0F19;
+  --titlebar-border: rgba(255, 255, 255, 0.10);
+  --titlebar-text: #CBD5E1;
+  --titlebar-btn-hover: #1F2E45;
+  --titlebar-close-hover: #DC2626;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme='gray'] {
+  --bg-primary: #18181B;
+  --bg-secondary: #202024;
+  --bg-card: #27272A;
+  --bg-hover: #323238;
+  --bg-tertiary: #3F3F46;
+
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-highlight: rgba(255, 255, 255, 0.24);
+  --border-strong: rgba(255, 255, 255, 0.40);
+
+  --text-main: #FAFAFA;
+  --text-muted: #D4D4D8;
+  --text-dim: #A1A1AA;
+
+  --accent-primary: #4F46E5;
+  --accent-hover: #4338CA;
+  --accent-glow: rgba(79, 70, 229, 0.25);
+  --accent-text: #FFFFFF;
+
+  --emerald: #34D399;
+  --emerald-bg: rgba(52, 211, 153, 0.16);
+  --emerald-border: rgba(52, 211, 153, 0.32);
+
+  --ruby: #FCA5A5;
+  --ruby-bg: rgba(248, 113, 113, 0.16);
+  --ruby-border: rgba(248, 113, 113, 0.32);
+
+  --amber: #FBBF24;
+  --amber-bg: rgba(251, 191, 36, 0.16);
+  --amber-border: rgba(251, 191, 36, 0.32);
+
+  --cyan: #38BDF8;
+  --cyan-bg: rgba(56, 189, 248, 0.16);
+  --cyan-border: rgba(56, 189, 248, 0.32);
+
+  --titlebar-bg: #18181B;
+  --titlebar-border: rgba(255, 255, 255, 0.10);
+  --titlebar-text: #D4D4D8;
+  --titlebar-btn-hover: #323238;
+  --titlebar-close-hover: #DC2626;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.55);
+}
+
+/* ==========================================================================
+   GLOBAL BASE STYLES & OFFLINE TYPOGRAPHY
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+/* Headings with crisp enterprise typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--text-main);
+}
+
+/* Monospace numerals & SKU codes */
+.font-mono, .chip-mono, .sku-code, .po-code, .currency-val {
+  font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   ELECTRON FRAMELESS WINDOW DRAG REGIONS
+   ========================================================================== */
+
+.electron-drag-region {
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.electron-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* ==========================================================================
+   ENTERPRISE UI SURFACES & CARDS
+   ========================================================================== */
+
+.erp-card, .glass-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.erp-card:hover, .glass-card:hover {
+  border-color: var(--border-highlight);
+}
+
+.hover-lift {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-highlight);
+}
+
+/* ==========================================================================
+   BUTTONS & ACTIONS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.825rem;
+  padding: 8px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  outline: none;
+  white-space: nowrap;
+  line-height: 1.25;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: var(--accent-text);
+  border-color: var(--accent-primary);
+}
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--bg-hover);
+  border-color: var(--border-highlight);
+}
+
+.btn-danger {
+  background-color: var(--ruby-bg);
+  color: var(--ruby);
+  border-color: var(--ruby-border);
+}
+.btn-danger:hover:not(:disabled) {
+  background-color: var(--ruby);
+  color: #FFFFFF;
+}
+
+.btn-success {
+  background-color: var(--emerald-bg);
+  color: var(--emerald);
+  border-color: var(--emerald-border);
+}
+.btn-success:hover:not(:disabled) {
+  background-color: var(--emerald);
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   FORM CONTROLS & INPUTS
+   ========================================================================== */
+
+.input-field,
+:where(input[type="text"]),
+:where(input[type="number"]),
+:where(input[type="search"]),
+:where(input[type="password"]),
+:where(input[type="email"]),
+:where(input[type="date"]),
+:where(select),
+:where(textarea) {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.input-field:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-card);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* ==========================================================================
+   BADGES & STATUS INDICATORS
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.badge-success {
+  background-color: var(--emerald-bg);
+  color: var(--emerald);
+  border-color: var(--emerald-border);
+}
+
+.badge-danger {
+  background-color: var(--ruby-bg);
+  color: var(--ruby);
+  border-color: var(--ruby-border);
+}
+
+.badge-warning {
+  background-color: var(--amber-bg);
+  color: var(--amber);
+  border-color: var(--amber-border);
+}
+
+.badge-info {
+  background-color: var(--cyan-bg);
+  color: var(--cyan);
+  border-color: var(--cyan-border);
+}
+
+.badge-primary {
+  background-color: var(--accent-glow);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   CHIPS & CODES (SKU, PO, BATCH, BIN)
+   ========================================================================== */
+
+.chip-mono {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background-color: var(--bg-hover);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  user-select: text;
+}
+
+/* ==========================================================================
+   HIGH-DENSITY DATA TABLE
+   ========================================================================== */
+
+.erp-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.erp-table th {
+  background-color: var(--bg-secondary);
+  color: var(--text-dim);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.erp-table td {
+  padding: 10px 14px;
+  font-size: 0.825rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-main);
+  vertical-align: middle;
+  transition: background-color 0.12s ease;
+}
+
+.erp-table tr:hover td {
+  background-color: var(--bg-hover);
+}
+
+/* ==========================================================================
+   CUSTOM COMPACT SCROLLBAR
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-highlight);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* ==========================================================================
+   PULSE & ANIMATION UTILITIES
+   ========================================================================== */
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.75; }
+}
+
+.pulse-dot {
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   PRINT LAYOUT & VOUCHER TEMPLATE STYLES
+   ========================================================================== */
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide frameless titlebars, headers, sidebars, buttons, dialog overlays */
+  header, aside, .no-print, [data-titlebar="true"], button {
+    display: none !important;
+  }
+
+  /* Reset modal containers so dark backdrops do not print */
+  .fixed, [role="dialog"], .backdrop-blur-sm {
+    position: static !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  /* Print document container default */
+  .printable-area, #printable-document {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: none !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Standard document tables (PO, GRN, Waybill) */
+  #printable-document:not(.printable-thermal) table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  #printable-document:not(.printable-thermal) th,
+  #printable-document:not(.printable-thermal) td {
+    border: 1px solid #666666 !important;
+    color: #000000 !important;
+    background: transparent !important;
+  }
+
+  /* 80mm Thermal Receipt Chit formatting */
+  .printable-thermal,
+  #printable-document.printable-thermal {
+    position: relative !important;
+    width: 80mm !important;
+    max-width: 80mm !important;
+    margin: 0 auto !important;
+    padding: 3mm 4mm !important;
+    box-sizing: border-box !important;
+    font-size: 9pt !important;
+  }
+
+  .printable-thermal table {
+    border: none !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  .printable-thermal th,
+  .printable-thermal td {
+    border: none !important;
+    border-bottom: 1px dashed #333333 !important;
+    color: #000000 !important;
+    padding: 2px 1px !important;
+    background: transparent !important;
+  }
+
+  /* Shelf Rack Label formatting */
+  .printable-label {
+    max-width: 120mm !important;
+    margin: 0 auto !important;
+    border: 3px solid #000000 !important;
+    page-break-inside: avoid;
+  }
+
+  .print-page-break {
+    page-break-after: always;
+  }
+}
+
+

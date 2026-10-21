@@ -1,0 +1,105 @@
+{
+  "name": "probaho-erp",
+  "productName": "Probaho ERP",
+  "version": "1.0.0",
+  "description": "Probaho ERP - Open-Source Lightweight Offline-First Enterprise Supply Chain Suite",
+  "author": "Probaho Team",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "electron:dev": "cross-env ELECTRON_DEV=1 electron .",
+    "electron:build": "npm run build && electron-builder --win",
+    "electron:pack": "npm run build && electron-builder --win",
+    "electron:portable": "npm run build && electron-builder --win --target portable",
+    "electron:nsis": "npm run build && electron-builder --win --target nsis",
+    "test": "tsx tests/verify-erp-core.ts",
+    "test:verify": "tsx tests/verify-erp-core.ts",
+    "test:m2": "tsx tests/verify-m2-procurement.ts",
+    "test:m3": "tsx tests/verify-m3-inventory.ts",
+    "test:m4": "tsx tests/verify-m4-fulfillment.ts",
+    "test:m5": "tsx tests/verify-m5-packaging.ts",
+    "test:m6": "tsx tests/verify-m6-pos-and-enhancements.ts",
+    "test:m7": "tsx tests/verify-m7-security-and-auth.ts",
+    "test:m8": "tsx tests/verify-m8-firebase-sync.ts",
+    "test:m9": "tsx tests/verify-m9-guest-mode.ts",
+    "test:m10": "tsx tests/verify-m10-company-logo.ts",
+    "test:all": "tsx tests/run-all-tests.ts",
+    "postinstall": "node scripts/copy-wasm.cjs"
+  },
+  "build": {
+    "appId": "com.probaho.erp",
+    "productName": "Probaho ERP",
+    "copyright": "Copyright © 2026 Probaho Team. All rights reserved.",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "build/**/*",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "artifactName": "Probaho.ERP.Setup.${version}.${ext}",
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "license": "build/license.txt",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Probaho ERP",
+      "uninstallDisplayName": "Probaho ERP",
+      "runAfterFinish": true
+    },
+    "portable": {
+      "artifactName": "Probaho.ERP-Portable.${ext}"
+    }
+  },
+  "dependencies": {
+    "firebase": "^13.0.0",
+    "lucide-react": "^1.24.0",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "sql.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/sql.js": "^1.4.11",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "electron": "^43.1.0",
+    "electron-builder": "^26.15.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vitest": "^3.0.0"
+  }
+}
